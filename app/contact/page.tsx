@@ -5,7 +5,7 @@ import { Mail, MapPin, Phone, Clock, CheckCircle2 } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 
 const details = [
-  { icon: MapPin, label: "Office", value: "Trade Tower, Thapathali, Kathmandu" },
+  { icon: MapPin, label: "Office", value: "Trade Tower, Thapathali, Kathmandu, Nepal" },
   { icon: Mail, label: "Email", value: "universalrenewable24@gmail.com" },
   { icon: Phone, label: "Phone", value: "+977-9842787091" },
   { icon: Clock, label: "Hours", value: "[Sunday - Friday, 10:00 - 5:00]" },
@@ -30,8 +30,8 @@ export default function Contact() {
         subtitle="Send us a message and we will respond as soon as we can."
       />
 
-      <section className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-12 gap-10">
-        {/* DETAILS */}
+      <section className="max-w-7xl mx-auto px-6 pt-20 pb-10 grid lg:grid-cols-12 gap-10">
+        
         <div className="lg:col-span-5 rounded-[2rem] bg-brand-900 text-white p-10 space-y-7 self-start">
           <h2 className="text-2xl font-bold">Contact details</h2>
           {details.map((d) => (
@@ -82,6 +82,20 @@ export default function Contact() {
               </button>
             </form>
           )}
+        </div>
+      </section>
+
+      {/* MAP */}
+      <section className="max-w-7xl mx-auto px-6 pb-24">
+        <div className="rounded-[2rem] overflow-hidden border border-brand-100">
+          <iframe
+            title="Office location: Trade Tower, Thapathali, Kathmandu"
+            src="https://www.google.com/maps?q=Trade+Tower+Thapathali+Kathmandu&output=embed"
+            className="w-full h-[420px] border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
         </div>
       </section>
     </div>

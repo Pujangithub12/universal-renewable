@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
@@ -21,9 +22,14 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* LOGO AREA — replace the dashed box with <Image src="/logo.png" ... /> when the logo is ready */}
         <Link href="/" className="flex items-center gap-3 shrink-0 select-none">
-          <div className="w-12 h-12 rounded-full border-2 border-dashed border-brand-400 bg-brand-50 flex items-center justify-center text-[10px] font-semibold tracking-wider text-brand-600">
-            LOGO
-          </div>
+          <Image
+            src="/logo.png"
+            alt="Universal Renewable logo"
+            width={406}
+            height={335}
+            priority
+            className="h-12 w-auto object-contain"
+          />
           <div className="flex flex-col leading-none">
             <span className="font-serif text-xl font-bold text-brand-900">
               Universal <span className="text-brand-600 font-medium">Renewable</span>

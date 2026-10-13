@@ -1,21 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-50:  #f2faf4;
-  --color-brand-100: #dff3e4;
-  --color-brand-200: #bfe6c8;
-  --color-brand-300: #8fd2a0;
-  --color-brand-400: #56b974;
-  --color-brand-500: #2f9e56;
-  --color-brand-600: #1f8344;
-  --color-brand-700: #19683a;
-  --color-brand-800: #14522f;
-  --color-brand-900: #0d3a21;
+  /* Olive / leaf green taken from the Universal Renewable letterhead */
+  --color-brand-50:  #f7f9ec;
+  --color-brand-100: #ecf1d4;
+  --color-brand-200: #d9e3aa;
+  --color-brand-300: #c0d06f;
+  --color-brand-400: #98ae3c;
+  --color-brand-500: #7c9128;
+  --color-brand-600: #708020; /* logo olive */
+  --color-brand-700: #596719;
+  --color-brand-800: #444f14;
+  --color-brand-900: #2f380e;
 
-  /* Used very sparingly: small highlights only */
-  --color-accent: #d9a62e;
+  /* Orange from the letterhead swoosh: small highlights only */
+  --color-accent: #f5a83a;
 
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  /* Aptos shows on devices that have it; others fall back to Segoe UI / system font */
+  --font-sans: "Aptos", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Aptos", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
@@ -29,5 +32,5 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
 }

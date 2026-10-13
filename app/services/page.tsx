@@ -62,23 +62,6 @@ export default function Services() {
           </div>
         ))}
       </section>
-
-      <section className="max-w-7xl mx-auto px-6 pb-24">
-        <div className="rounded-[2rem] bg-brand-100 p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <div>
-            <h3 className="text-2xl font-bold text-brand-900">Not sure where to start?</h3>
-            <p className="text-brand-800/75 text-sm mt-2">
-              Get in touch and we will help you work out the right first step.
-            </p>
-          </div>
-          <Link
-            href="/contact"
-            className="bg-brand-700 text-white text-sm font-semibold px-8 py-3.5 rounded-full hover:bg-brand-800 transition-colors inline-flex items-center gap-2 self-start md:self-auto shrink-0"
-          >
-            Contact Us <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
     </div>
   );
 }

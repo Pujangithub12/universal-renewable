@@ -43,14 +43,22 @@ export default function About() {
             Solar energy, done properly.
           </h2>
           <p className="text-brand-800/80 leading-relaxed mb-4">
-            Universal Renewable is a solar energy company. We help our clients
-            make use of clean solar power through well-planned and carefully
-            delivered solar projects.
+            Universal Renewable Energy Pvt. Ltd. is a solar energy company
+            based in Kathmandu, Nepal. We help our clients make use of clean
+            solar power through well-planned and carefully delivered solar
+            projects.
+          </p>
+          <p className="text-brand-800/80 leading-relaxed mb-4">
+            Our work covers the whole journey of a solar project: energy
+            consultation, system design, installation, and ongoing maintenance
+            and support. By covering each stage, we aim to keep every project
+            clear, consistent and free of surprises.
           </p>
           <p className="text-brand-800/80 leading-relaxed">
             Every project is different, so we start by understanding what you
             need and then work with you from the first discussion through to
-            completion.
+            completion. Our goal is simple: solar systems that are safe,
+            dependable and built to serve you well for years to come.
           </p>
         </div>
 
@@ -67,6 +75,7 @@ export default function About() {
         </div>
       </section>
 
+      {/* VALUES */}
       <section className="bg-brand-50 border-t border-brand-100 py-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-brand-900 mb-10">Our Values</h2>
